@@ -23,15 +23,24 @@ into the {body} of the default.hbs template --}}
 <main id="site-main" class="site-main outer" role="main">
     <div class="inner">
 
-        <div class="post-feed">
-            {{#foreach posts}}
+        <div class="post-full-content juniper-homepage">
+            <h1>Swordplay anyone?</h1>
 
-              {{#has tag="#home"}}
+            <p>
+                I am forming a swordplay group in Bend. Please click around this website to get a sense of what swordplay means to me, then get in touch with me at <a href="mailto:contact@juniperswordplay.com">contact@juniperswordplay.com</a>. Or call/text <a href="tel:1-206-850-2788">206-850-2788</a>. Practices start April 5 at 7am at the Juniper Elementary gym.
+            </p>
+
+            <p>
+                -- Eric Artzt, coach/organizer
+            </p>
+
+        </div>
+ 
+       <div class="post-feed">
+            {{#foreach posts}}
 
                 {{!-- The tag below includes the markup for each post - partials/post-card.hbs --}}
                 {{> "post-card"}}
-
-              {{/has}}
 
             {{/foreach}}
         </div>

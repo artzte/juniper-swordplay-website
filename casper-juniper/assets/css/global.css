@@ -14,6 +14,15 @@
     --whitegrey: #e5eff5;
     --pink: #fa3a57;
     --brown: #a3821a;
+
+    --accentMain: #e0edd3;
+    --accentSecond: #bbb8ad;
+    --grayLight: #9b9c9e;
+    --grayMedium: #757a7e;
+    --grayDark: #2e3a4a;
+
+    --displayFont: Domine;
+    --bodyFont: Roboto;
 }
 
 /* Reset
@@ -105,6 +114,7 @@ video {
 }
 body {
     line-height: 1;
+    font-family: var(--bodyFont), sans-serif;
 }
 ol,
 ul {
@@ -282,7 +292,7 @@ html {
 body {
     overflow-x: hidden;
     color: color(var(--midgrey) l(-25%));
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-family: var(--bodyFont), sans-serif;
     font-size: 1.5rem;
     line-height: 1.6em;
     font-weight: 400;
@@ -371,7 +381,7 @@ dt {
     margin: 0 20px 0 0;
     width: 120px;
     color: var(--darkgrey);
-    font-weight: 500;
+    font-weight: 400;
     text-align: right;
 }
 
@@ -389,7 +399,7 @@ blockquote {
 blockquote p {
     margin: 0.8em 0;
     font-size: 1.2em;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 blockquote small {
@@ -425,16 +435,25 @@ h3,
 h4,
 h5,
 h6 {
+    font-family: var(--displayFont), serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin-top: 0;
     line-height: 1.15;
-    font-weight: 700;
+    font-weight: 400;
     text-rendering: optimizeLegibility;
 }
 
 h1 {
     margin: 0 0 0.5em 0;
     font-size: 5rem;
-    font-weight: 700;
+    font-weight: 400;
 }
 @media (max-width: 500px) {
     h1 {
@@ -455,7 +474,7 @@ h2 {
 h3 {
     margin: 1.5em 0 0.5em 0;
     font-size: 1.8rem;
-    font-weight: 500;
+    font-weight: 400;
 }
 @media (max-width: 500px) {
     h3 {
@@ -466,17 +485,17 @@ h3 {
 h4 {
     margin: 1.5em 0 0.5em 0;
     font-size: 1.6rem;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 h5 {
     margin: 1.5em 0 0.5em 0;
     font-size: 1.4rem;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 h6 {
     margin: 1.5em 0 0.5em 0;
     font-size: 1.4rem;
-    font-weight: 500;
+    font-weight: 400;
 }

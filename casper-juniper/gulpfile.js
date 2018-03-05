@@ -39,7 +39,7 @@ gulp.task('css', function () {
     ];
 
     return gulp.src('assets/css/*.css')
-        .on('error', swallowError)
+        //.on('error', swallowError)
         .pipe(sourcemaps.init())
         .pipe(postcss(processors))
         .pipe(sourcemaps.write('.'))
